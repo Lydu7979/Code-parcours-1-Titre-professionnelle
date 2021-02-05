@@ -1,0 +1,222 @@
+INFO:uvicorn.error:Started server process [17068]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [10800]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [15564]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [8232]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [18336]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [3300]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [17096]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [17096]
+INFO:uvicorn.error:Started server process [18860]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\python38\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\python38\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\python38\lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File ".\fastapi1.py", line 27, in predict
+    clf_pipe = joblib.load('sentiment_pipe(1).joblib')
+  File "c:\python38\lib\site-packages\joblib\numpy_pickle.py", line 577, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'sentiment_pipe(1).joblib'
+INFO:uvicorn.error:Started server process [14024]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [4556]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [19120]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [19120]
+INFO:uvicorn.error:Started server process [16728]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [16728]
+INFO:uvicorn.error:Started server process [6816]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:root:all fields are present!
+INFO:root:Connexion réussie
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+WARNING:root:all fields are present!
+INFO:root:Connexion réussie
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+WARNING:root:all fields are present!
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:root:Connexion réussie
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:root:Réalisé le 05/02
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+INFO:hypercorn.error:Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 14:30:36,539.539 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 14:30:36,681.681 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 14:31:07,374.374 INFO fastapi1 - get: Réalisé le 05/02
+2021-02-05 14:32:14,340.340 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 14:32:14,488.488 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 14:33:42,260.260 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 14:33:42,414.414 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 14:34:11,009.009 INFO fastapi1 - get: good connection
+2021-02-05 14:35:03,414.414 WARNING fastapi1 - post: token is the bad one!
+2021-02-05 17:05:31,495.495 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 17:05:31,647.647 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 17:06:47,734.734 WARNING fastapi1 - sentiment: token is the bad one!
+2021-02-05 17:06:47,736.736 ERROR logging - exception: Error in ASGI Framework
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\hypercorn\asyncio\context.py", line 39, in _handle
+    await invoke_asgi(app, scope, receive, send)
+  File "c:\python38\lib\site-packages\hypercorn\utils.py", line 239, in invoke_asgi
+    await app(scope, receive, send)
+  File "c:\python38\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 209, in app
+    response_data = await serialize_response(
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 126, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for Entre
+response -> text
+  field required (type=value_error.missing)
+2021-02-05 17:07:02,550.550 INFO fastapi1 - get: good connection
+2021-02-05 17:15:47,858.858 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 17:15:48,014.014 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 17:17:05,638.638 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 17:17:05,801.801 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 17:20:58,289.289 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 17:20:58,447.447 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
+2021-02-05 17:22:14,411.411 WARNING fastapi1 - sentiment: token is the bad one!
+2021-02-05 17:22:14,416.416 ERROR logging - exception: Error in ASGI Framework
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\hypercorn\asyncio\context.py", line 39, in _handle
+    await invoke_asgi(app, scope, receive, send)
+  File "c:\python38\lib\site-packages\hypercorn\utils.py", line 239, in invoke_asgi
+    await app(scope, receive, send)
+  File "c:\python38\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 209, in app
+    response_data = await serialize_response(
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 126, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for Entre
+response -> text
+  field required (type=value_error.missing)
+2021-02-05 17:22:25,631.631 WARNING fastapi1 - sentiment: token is the bad one!
+2021-02-05 17:22:25,640.640 ERROR logging - exception: Error in ASGI Framework
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\hypercorn\asyncio\context.py", line 39, in _handle
+    await invoke_asgi(app, scope, receive, send)
+  File "c:\python38\lib\site-packages\hypercorn\utils.py", line 239, in invoke_asgi
+    await app(scope, receive, send)
+  File "c:\python38\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\python38\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "c:\python38\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 209, in app
+    response_data = await serialize_response(
+  File "c:\python38\lib\site-packages\fastapi\routing.py", line 126, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for Entre
+response -> text
+  field required (type=value_error.missing)
+2021-02-05 17:22:42,179.179 INFO fastapi1 - get: good connection
+2021-02-05 17:31:11,262.262 DEBUG proactor_events - __init__: Using proactor: IocpProactor
+2021-02-05 17:31:11,416.416 INFO logging - info: Running on http://127.0.0.1:8000 (CTRL + C to quit)
