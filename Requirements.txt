@@ -4,3 +4,7 @@ uvicorn==0.8.6
 lightgbm==2.2.1
 fastapi==0.35.0
 logging
+nltk
+pytest
+unidecode
+stop_words
